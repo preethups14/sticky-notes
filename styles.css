@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family: "Yuji Mai";
+    min-height: 100vh;
+}
+.sticky-notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+}
+.note-container{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.note-content {
+    padding: 15px;
+    height: calc(100%-40px);
+    color: darkolivegreen;
+
+}
+.note-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.delete-note{
+    background-color: blueviolet;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.create-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(58, 109, 109);
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 100px;
+}
+.create-note:hover{
+    transform: scale(1.05);
+}
